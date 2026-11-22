@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDBpochti — Вход</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-bar">
+        <h1 class="header-bar__title">IMDBpochti</h1>
+        <nav class="header-bar__nav">
+            <a class="header-bar__link" href="index.html">Главная</a>
+            <a class="header-bar__link" href="movies.html">Фильмы</a>
+            <a class="header-bar__link" href="series.html">Сериалы</a>
+            <a class="header-bar__link" href="rating.html">Рейтинг</a>
+            <a class="header-bar__link header-bar__link--active" href="login.html">Вход</a>
+        </nav>
+    </header>
+
+    <main class="content-area">
+
+        <h2 class="page-title">Вход</h2>
+
+        <form class="login-form" id="login-form" action="/api/login" method="post">
+
+            <div class="login-form__field">
+                <label class="login-form__label" for="login">Логин</label>
+                <input class="login-form__input" type="text" id="login" name="login"
+                       minlength="3" required autocomplete="username" placeholder="Например, cinefan">
+            </div>
+
+            <div class="login-form__field">
+                <label class="login-form__label" for="password">Пароль</label>
+                <input class="login-form__input" type="password" id="password" name="password"
+                       minlength="6" required autocomplete="current-password" placeholder="Не менее 6 символов">
+            </div>
+
+            <div class="login-form__field">
+                <label class="login-form__checkbox-label">
+                    <input class="login-form__checkbox" type="checkbox" name="consent" required>
+                    Я согласен на обработку персональных данных
+                </label>
+            </div>
+
+            <button class="login-form__button" type="submit">Поехали!</button>
+
+            <p class="login-form__message" aria-live="polite"></p>
+        </form>
+
+    </main>
+
+    <script src="js/app.js" charset="UTF-8" defer></script>
+</body>
+</html>
