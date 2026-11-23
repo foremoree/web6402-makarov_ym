@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDBpochti — Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-bar">
+        <h1 class="header-bar__title">IMDBpochti</h1>
+        <nav class="header-bar__nav">
+            <a class="header-bar__link header-bar__link--active" href="index.html">Главная</a>
+            <a class="header-bar__link" href="movies.html">Фильмы</a>
+            <a class="header-bar__link" href="series.html">Сериалы</a>
+            <a class="header-bar__link" href="rating.html">Рейтинг</a>
+            <a class="header-bar__link" href="login.html">Вход</a>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <section class="welcome-block">
+            <h2>Добро пожаловать на IMDBpochti</h2>
+            <p>Сайт с рейтингами фильмов и сериалов. Здесь собраны популярные картины и оценки зрителей.</p>
+        </section>
+
+        <section>
+            <h2>Сейчас смотрят</h2>
+            <div class="film-list film-list--inline">
+
+                <article class="film-card" style="--i: 0">
+                    <img class="film-card__poster" src="images/poster-shawshank.jpg" width="180" height="270" alt="Постер фильма Побег из Шоушенка">
+                    <h3 class="film-card__title">Побег из Шоушенка</h3>
+                    <p><span class="film-card__year">1994</span> · <span class="film-card__genre">Драма</span></p>
+                </article>
+
+                <article class="film-card" style="--i: 1">
+                    <img class="film-card__poster" src="images/poster-godfather.jpg" width="180" height="270" alt="Постер фильма Крёстный отец">
+                    <h3 class="film-card__title">Крёстный отец</h3>
+                    <p><span class="film-card__year">1972</span> · <span class="film-card__genre">Криминал</span></p>
+                </article>
+
+                <article class="film-card" style="--i: 2">
+                    <img class="film-card__poster" src="images/poster-dark-knight.jpg" width="180" height="270" alt="Постер фильма Тёмный рыцарь">
+                    <h3 class="film-card__title">Тёмный рыцарь</h3>
+                    <p><span class="film-card__year">2008</span> · <span class="film-card__genre">Боевик</span></p>
+                </article>
+
+            </div>
+        </section>
+
+        <p>Полная таблица оценок: <a href="rating.html">смотреть</a></p>
+
+    </main>
+
+</body>
+</html>
